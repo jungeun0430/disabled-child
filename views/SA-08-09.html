@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>장애아가족 양육지원사업</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../lib/jquery-ui-1.13.2.custom/jquery-ui.min.css">
+
+  <!-- js & lib & chart -->
+  <script src="../lib/jquery-3.6.1/jquery-3.6.1.js"></script>
+  <script src="../lib/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../js/common.js"></script>
+
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a href="#" title="hamburger-button" class="hamburger-button only-tablet on"><span class="bar">메뉴 열고/닫기</span></a>
+    <ul class="menu">
+      <li class="on"><a href="#">Dash Board</a></li>
+      <li><a href="#">돌봄 서비스</a></li>
+      <li><a href="#">교육의수</a></li>
+      <li><a href="#">돌보미 급여조회</a></li>
+      <li><a href="#">게시판</a></li>
+      <li><a href="#">관리자페이지</a></li>
+    </ul>
+    <div class="member-box">
+      <p><span>(중앙)</span> 홍길동(kim0001)</p>
+      <a href="#" class="btn line">로그아웃</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <h3 class="info-title">관리자 페이지 > 사업 실적 > 장애아 돌보미 현황</h3>
+  <div class="con-box">
+    <div class="search-box">
+      <div class="input-box info-input-box">
+        <div class="input">
+          <label for="">기간</label>
+          <div class="datepicker-box">
+            <input type="text" id="date1" class="info-input datepicker">
+            <label for="date1">
+              <img src="./../img/datepicker-arrow.png" alt="달력 열기" />
+            </label>
+          </div>
+        </div>
+        <div class="input">
+          <label for="">실적 유형</label>
+          <div class="select-box">
+            <select name="" id="">
+              <option value="">전체</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
+      </div>
+      <div class="btn-wrap j-center">
+        <button class="btn small">조회</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-heading">
+    <div>
+      <div class="download-filebox btn shadow">
+        <a href="" download="">
+          <img src="../img/Excel-logo.svg" alt="엑셀로고">
+          <span>Excel 다운로드</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>돌보미 관리</h3>
+    <div class="table-wrap color-table multi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="3">기관</th>
+                    <th rowspan="3">전월<br />ⓚ</th>
+                    <th colspan="4">소수 돌보미수(신규)</th>
+                    <th colspan="4">소속 이탈 돌보미수</th>
+                    <th rowspan="3">실소속<br />ⓚ+ⓛ-ⓜ</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">양성교육<br />수료<br />(실습 포함)</th>
+                    <th rowspan="2">양성교육<br />면제</th>
+                    <th rowspan="2">이탈 후<br />활동재개</th>
+                    <th rowspan="2">합계<br />ⓛ</th>
+                    <th colspan="2">활동중지</th>
+                    <th rowspan="2">자의<br />활동포기</th>
+                    <th rowspan="2">합계<br />ⓜ</th>
+                </tr>
+                <tr>
+                    <th>활동중지<br />(1년 이내)</th>
+                    <th>자격취소</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>315</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>319</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>315</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>319</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>315</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>319</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>315</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>319</td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>3,186</td>
+                    <td>41</td>
+                    <td>34</td>
+                    <td>8</td>
+                    <td>83</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>3,254</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box chart">
+      <h3>신규 돌보미</h3>
+      <div class="table-wrap chart">
+        <div class="chart-table">
+          <canvas id="chart-pie9"></canvas>
+        </div>    
+      </div>
+    </div>
+    <div class="con-box chart">
+      <h3>이탈 돌보미</h3>
+      <div class="table-wrap chart">
+        <div class="chart-table">
+          <canvas id="chart-pie10"></canvas>
+        </div>    
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>돌보미 활동</h3>
+    <div class="table-wrap color-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>기관</th>
+                    <th>서비스 연계<br />(신규)</th>
+                    <th>서비스 연계<br />(월간)</th>
+                    <th>활동시간</th>
+                    <th>시간당 단가<br />(원)</th>
+                    <th>교통비<br />(원)</th>
+                    <th>법정수당<br />(원)</th>
+                    <th>총 활동비<br />(원)</th>
+                    <th>1인당<br />월평균 수당<br />(원)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>9</td>
+                    <td>208</td>
+                    <td>15,643</td>
+                    <td>143,289,880</td>
+                    <td>0</td>
+                    <td>23,685,012</td>
+                    <td>166,974,892</td>
+                    <td>802,764</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>9</td>
+                    <td>208</td>
+                    <td>15,643</td>
+                    <td>143,289,880</td>
+                    <td>0</td>
+                    <td>23,685,012</td>
+                    <td>166,974,892</td>
+                    <td>802,764</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>9</td>
+                    <td>208</td>
+                    <td>15,643</td>
+                    <td>143,289,880</td>
+                    <td>0</td>
+                    <td>23,685,012</td>
+                    <td>166,974,892</td>
+                    <td>802,764</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>9</td>
+                    <td>208</td>
+                    <td>15,643</td>
+                    <td>143,289,880</td>
+                    <td>0</td>
+                    <td>23,685,012</td>
+                    <td>166,974,892</td>
+                    <td>802,764</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>9</td>
+                    <td>208</td>
+                    <td>15,643</td>
+                    <td>143,289,880</td>
+                    <td>0</td>
+                    <td>23,685,012</td>
+                    <td>166,974,892</td>
+                    <td>802,764</td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>83</td>
+                    <td>2,117</td>
+                    <td>194,587</td>
+                    <td>1,782,416,920</td>
+                    <td>21,431,000</td>
+                    <td>382,123,801</td>
+                    <td>2,185,971,721</td>
+                    <td>1,032,580</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box chart">
+      <h3>신규 서비스 연계</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie11"></canvas>
+      </div>   
+    </div>
+    <div class="con-box chart">
+      <h3>월간 서비스 연계</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie12"></canvas>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>활동 돌보미(신규) 인적사항</h3>
+    <div class="table-wrap color-table multi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="3">기관</th>
+                    <th colspan="10">활동 돌보미수(신규)</th>
+                </tr>
+                <tr>
+                    <th colspan="2">성별</th>
+                    <th rowspan="2">합계</th>
+                    <th colspan="6">연령</th>
+                    <th rowspan="2">합계</th>
+                </tr>
+                <tr>
+                    <th>남</th>
+                    <th>여</th>
+                    <th>만30세 미만</th>
+                    <th>만30세 이상<br />~만40세 미만</th>
+                    <th>만40세 이상<br />~만50세 미만</th>
+                    <th>만50세 이상<br />~만60세 미만</th>
+                    <th>만60세 이상<br />~만65세 미만</th>
+                    <th>만65세 이상<br />~만70세 이하</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>2</td>
+                    <td>81</td>
+                    <td>83</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td>18</td>
+                    <td>35</td>
+                    <td>17</td>
+                    <td>3</td>
+                    <td>83</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box chart">
+      <h3>신규 활동 돌보미 성별</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie13"></canvas>
+      </div>    
+    </div>
+    <div class="con-box chart">
+      <h3>신규 활동 돌보미 연령대</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie14"></canvas>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>돌보미 활동비</h3>
+    <div class="table-wrap color-table multi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">기관</th>
+                    <th colspan="6">활동 돌보미수(월간)</th>
+                    <th rowspan="2">합계</th>
+                </tr>
+                <tr>
+                    <th>50만원 이하</th>
+                    <th>50만원 초과~<br/>100만원 이하</th>
+                    <th>100만원 초과~<br/>150만원 이하</th>
+                    <th>150만원 초과~<br/>200만원 이하</th>
+                    <th>200만원 초과~<br/>250만원 이하</th>
+                    <th>250만원 초과</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>27</td>
+                    <td>81</td>
+                    <td>66</td>
+                    <td>21</td>
+                    <td>13</td>
+                    <td>0</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>27</td>
+                    <td>81</td>
+                    <td>66</td>
+                    <td>21</td>
+                    <td>13</td>
+                    <td>0</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>27</td>
+                    <td>81</td>
+                    <td>66</td>
+                    <td>21</td>
+                    <td>13</td>
+                    <td>0</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>27</td>
+                    <td>81</td>
+                    <td>66</td>
+                    <td>21</td>
+                    <td>13</td>
+                    <td>0</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>262</td>
+                    <td>966</td>
+                    <td>461</td>
+                    <td>290</td>
+                    <td>115</td>
+                    <td>23</td>
+                    <td>2,117</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box chart">
+      <h3>돌보미 활동비</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie15"></canvas>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>돌봄서비스 제공 아동수</h3>
+    <div class="table-wrap color-table multi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">기관</th>
+                    <th colspan="5">활동 돌보미수(월간)</th>
+                    <th rowspan="2">합계</th>
+                </tr>
+                <tr>
+                    <th>아동 1인</th>
+                    <th>아동 2인</th>
+                    <th>아동 3인</th>
+                    <th>아동 4인</th>
+                    <th>아동 5인 이상</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>166</td>
+                    <td>37</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>166</td>
+                    <td>37</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>166</td>
+                    <td>37</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>166</td>
+                    <td>37</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>1,428</td>
+                    <td>498</td>
+                    <td>155</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>2,117</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box chart">
+      <h3>돌봄서비스 제공 아동수</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie16"></canvas>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>양성교육</h3>
+    <div class="table-wrap color-table multi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">기관</th>
+                    <th colspan="2">진행방법 및 횟수</th>
+                    <th colspan="3">양성교육 수료인원(연인원)</th>
+                </tr>
+                <tr>
+                    <th>온라인</th>
+                    <th>오프라인</th>
+                    <th>40시간</th>
+                    <th>20시간</th>
+                    <th>합계</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>29</td>
+                    <td>12</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box chart">
+      <h3>양성교육 진행방법 및 횟수</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie17"></canvas>
+      </div>  
+    </div>
+    <div class="con-box chart">
+      <h3>양성교육 수료인원</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie18"></canvas>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>보수교육</h3>
+    <div class="table-wrap color-table multi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">기관</th>
+                    <th colspan="2">진행방법 및 횟수</th>
+                    <th colspan="3">보수교육 운영 현황(연인원)</th>
+                </tr>
+                <tr>
+                    <th>온라인</th>
+                    <th>오프라인</th>
+                    <th>교육시간</th>
+                    <th>참여인원</th>
+                    <th>비고</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td>42</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+  
+  <div class="tables-wrap">
+    <div class="con-box chart">
+      <h3>보수교육 진행방법 및 횟수</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie19"></canvas>
+      </div>  
+    </div>
+    <div class="con-box chart">
+      <h3>보수교육 참여인원</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie20"></canvas>
+      </div>  
+    </div>
+  </div>
+</div>
+<script>
+  const sa0809_1 = document.getElementById('chart-pie9');
+  const sa0809_2 = document.getElementById('chart-pie10');
+  const sa0809_3 = document.getElementById('chart-pie11');
+  const sa0809_4 = document.getElementById('chart-pie12');
+  const sa0809_5 = document.getElementById('chart-pie13');
+  const sa0809_6 = document.getElementById('chart-pie14');
+  const sa0809_7 = document.getElementById('chart-pie15');
+  const sa0809_8 = document.getElementById('chart-pie16');
+  const sa0809_9 = document.getElementById('chart-pie17');
+  const sa0809_10 = document.getElementById('chart-pie18');
+  const sa0809_11 = document.getElementById('chart-pie19');
+  const sa0809_12 = document.getElementById('chart-pie20');
+
+
+  new Chart(sa0809_1, {
+  type: 'pie',
+
+  data: {
+    labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+      borderWidth: 1
+    }]
+  },
+});
+
+new Chart(sa0809_2, {
+  type: 'pie',
+
+  data: {
+    labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+      borderWidth: 1
+    }]
+  },
+});
+
+new Chart(sa0809_3, {
+  type: 'pie',
+
+  data: {
+    labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+      borderWidth: 1
+    }]
+  },
+});
+
+new Chart(sa0809_4, {
+  type: 'pie',
+
+  data: {
+    labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+      borderWidth: 1
+    }]
+  },
+});
+
+new Chart(sa0809_5, {
+  type: 'pie',
+
+  data: {
+    labels: ['여자', '남자'],
+    datasets: [{
+      label: '# of Votes',
+      data: [81,2],
+      borderWidth: 1
+    }]
+  },
+});
+
+new Chart(sa0809_6, {
+  type: 'pie',
+
+  data: {
+    labels: ['30세미만', '40세미만', '50세미만', '60세미만', '65세미만', '70세이하'],
+    datasets: [{
+      label: '# of Votes',
+      data: [0, 10, 18, 35, 17, 3],
+      borderWidth: 1
+    }]
+  },
+});
+
+new Chart(sa0809_7, {
+  type: 'pie',
+
+  data: {
+    labels: ['50만원이하', '100만원이하', '150만원이하', '200만원이하', '250만원이하', '250만원초과'],
+    datasets: [{
+      label: '# of Votes',
+      data: [262, 966, 461, 290, 115, 23, 2,117],
+      borderWidth: 1
+    }]
+  },
+});
+
+new Chart(sa0809_8, {
+  type: 'pie',
+
+  data: {
+    labels: ['1인', '2인', '3인', '4인', '5인이상'],
+    datasets: [{
+      label: '# of Votes',
+      data: [1428,498,155,30,6],
+      borderWidth: 1
+    }]
+  },
+});
+
+new Chart(sa0809_9, {
+  type: 'pie',
+
+  data: {
+    labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+      borderWidth: 1
+    }]
+  },
+});
+
+new Chart(sa0809_10, {
+  type: 'pie',
+
+  data: {
+    labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+      borderWidth: 1
+    }]
+  },
+});
+
+new Chart(sa0809_11, {
+  type: 'pie',
+
+  data: {
+    labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+      borderWidth: 1
+    }]
+  },
+});
+
+new Chart(sa0809_12, {
+  type: 'pie',
+
+  data: {
+    labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+      borderWidth: 1
+    }]
+  },
+});
+
+
+</script>
+</body>
+</html>

@@ -18,6 +18,7 @@
 <body>
 <header>
   <div class="wrap">
+    <a href="#" title="hamburger-button" class="hamburger-button only-tablet on"><span class="bar">메뉴 열고/닫기</span></a>
     <ul class="menu">
       <li class="on"><a href="#">Dash Board</a></li>
       <li><a href="#">돌봄 서비스</a></li>
@@ -62,22 +63,31 @@
           </div>
           <div class="input">
             <label for="">이용자</label>
-            <select name="" id="" class="info-input">
-              <option value=""></option>
-              <option value=""></option>
-            </select>
+            <div class="select-box">
+              <select name="" id="">
+                <option value="">전체</option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+              <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="con-box">
-      <div class="user-info-wrap">
+    <div class="con-box service-detail">
+      <div class="user-info-wrap ">
         <h3>서비스 상세 정보</h3>
-        <div class="input-box info-input-box info-input-box5">
+        <div class="input-box info-input-box">
           <div class="input">
             <label for="">활동 월</label>
-            <input type="date" id="" class="info-input" value="-">
+            <div class="datepicker-box">
+              <input type="text" id="date1" class="info-input datepicker">
+              <label for="date1">
+                <img src="./../img/datepicker-arrow.png" alt="달력 열기" />
+              </label>
+            </div>
           </div>
           <div class="input">
             <label for="">활동시간</label>
@@ -89,19 +99,27 @@
           </div>
           <div class="input">
             <label for="">활동장소</label>
-            <select name="" id="" class="info-input">
-              <option value="">이용자 가정</option>
-              <option value=""></option>
-            </select>
+            <div class="select-box">
+              <select name="" id="">
+                <option value="">이용자 가족</option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+              <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+            </div>
           </div>
         </div>
         <div class="input-box info-input-box">
           <div class="input">
             <label for="">서비스 내용</label>
-            <select name="" id="" class="info-input">
-              <option value="">일상생활</option>
-              <option value=""></option>
-            </select>
+            <div class="select-box">
+              <select name="" id="">
+                <option value="">일상생활</option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+              <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+            </div>
           </div>
           <div class="input">
             <label for="">서비스 내용</label>
@@ -109,38 +127,38 @@
           </div>
           <div class="input">
             <label for="">서비스 상태</label>
-            <select name="" id="" class="info-input">
-              <option value="">계획</option>
-              <option value=""></option>
-            </select>
+            <div class="select-box">
+              <select name="" id="">
+                <option value="">계획</option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+              <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+            </div>
           </div>
         </div>
-        <div class="input-box info-input-box4 info-input-box5">
-          <div class="input input-textarea">
-            <label for="" class="textare-label">비고</label>
-            <textarea name="" id="" cols="30" rows="5"></textarea>
-          </div>
+        <div class="input-box etc">
+          <label for="" class="textarea-label">비고</label>
+          <textarea name="" id="" cols="30" rows="5"></textarea>
         </div>
-        
-        <div class="input-box info-input-box4 info-input-box5">
-          <div class="input input-textarea">
-            <label for="">첨부파일</label>
-            <div class="upload-file-wrap">
-              <input type="text" class="drag-drop-box" value="첨부하실 파일을 끌어서 넣어주십시오.">
-              <div class="btn-box flex">
-                <div class="upload-filebox btn small">
-                  <label for="upload-file">파일추가</label>
-                  <input type="file" id="upload-file"> 
-                </div>
-                <button class="btn small">삭제</button>
-              </div>
+
+        <div class="input-box etc">
+          <label for="" class="textarea-label">첨부파일</label>
+          <div class="upload-file-wrap">
+            <input type="text" class="drag-drop-box" value="첨부하실 파일을 끌어서 넣어주십시오.">
+            <div class="btn-wrap upload">
+              <label for="upload-file" class="upload-box btn xsmasll">
+                파일추가
+              </label>
+              <input type="file" id="upload-file">
+              <button class="btn xsmall">삭제</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-      <div class="flex j-end">
+      <div class="flex j-end mb-20">
         <button class="btn small">저장</button>
       </div>
 </div>

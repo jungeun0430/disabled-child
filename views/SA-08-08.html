@@ -1,0 +1,1915 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>장애아가족 양육지원사업</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../lib/jquery-ui-1.13.2.custom/jquery-ui.min.css">
+
+  <!-- js & lib & chart -->
+  <script src="../lib/jquery-3.6.1/jquery-3.6.1.js"></script>
+  <script src="../lib/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../js/common.js"></script>
+
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a href="#" title="hamburger-button" class="hamburger-button only-tablet on"><span class="bar">메뉴 열고/닫기</span></a>
+    <ul class="menu">
+      <li class="on"><a href="#">Dash Board</a></li>
+      <li><a href="#">돌봄 서비스</a></li>
+      <li><a href="#">교육의수</a></li>
+      <li><a href="#">돌보미 급여조회</a></li>
+      <li><a href="#">게시판</a></li>
+      <li><a href="#">관리자페이지</a></li>
+    </ul>
+    <div class="member-box">
+      <p><span>(중앙)</span> 홍길동(kim0001)</p>
+      <a href="#" class="btn line">로그아웃</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <h3 class="info-title">관리자 페이지 > 사업 실적> 돌봄서비스 현황</h3>
+  <div class="con-box">
+    <div class="search-box">
+      <div class="input-box info-input-box">
+        <div class="input">
+          <label for="">기간</label>
+          <div class="datepicker-box">
+            <input type="text" id="date1" class="info-input datepicker">
+            <label for="date1">
+              <img src="./../img/datepicker-arrow.png" alt="달력 열기" />
+            </label>
+          </div>
+        </div>
+        <div class="input">
+          <label for="">실적 유형</label>
+          <div class="select-box">
+            <select name="" id="">
+              <option value="">전체</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
+      </div>
+      <div class="btn-wrap j-center">
+        <button class="btn small">조회</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-heading">
+    <div>
+      <div class="download-filebox btn shadow">
+        <a href="" download="">
+          <img src="../img/Excel-logo.svg" alt="엑셀로고">
+          <span>Excel 다운로드</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>선정 아동수</h3>
+    <div class="table-wrap color-table multi-table">
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="3">기관</th>
+            <th colspan="6">돌봄서비스 선정 아동 수</th>
+            <th colspan="6">돌봄서비스 대기이동수</th>
+          </tr>
+          <tr>
+            <th rowspan="2">전월 ⓐ</th>
+            <th rowspan="2">신규 ⓑ</th>
+            <th rowspan="2">긴급 돌봄 ⓒ <br>(신규)</th>
+            <th rowspan="2">포기 탈락 ⓓ <br>(이용 無)</th>
+            <th rowspan="2">포기탈락 <br>(1시간 이상)</th>
+            <th rowspan="2">실선정 <br>ⓐ+ⓑ+ⓒ+ⓓ</th>
+            <th rowspan="2">전월 ⓔ</th>
+            <th rowspan="2">신규 ⓕ</th>
+            <th colspan="3">조정 아동수</th>
+            <th rowspan="2">실대기 <br>ⓔ+ⓕ+ⓖ</th>
+          </tr>
+          <tr>
+            <th>선정</th>
+            <th>포기.탈락</th>
+            <th>탈락 ⓖ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>서울</td>
+            <td>436</td>
+            <td>31</td>
+            <td>0</td>
+            <td>5</td>
+            <td>3</td>
+            <td>462</td>  
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>284</td>
+            <td>9</td>
+            <td>0</td>
+            <td>0</td>
+            <td>3</td>
+            <td>293</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>대구</td>
+            <td>219</td>
+            <td>6</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>224</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>인천</td>
+            <td>260</td>
+            <td>11</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+            <td>271</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>광주</td>
+            <td>123</td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>127</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>대전</td>
+            <td>146</td>
+            <td>3</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>148</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>울산</td>
+            <td>139</td>
+            <td>4</td>
+            <td>0</td>
+            <td>1</td>
+            <td>3</td>
+            <td>142</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>세종</td>
+            <td>43</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>44</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>경기</td>
+            <td>498</td>
+            <td>34</td>
+            <td>0</td>
+            <td>7</td>
+            <td>10</td>
+            <td>525</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>강원</td>
+            <td>175</td>
+            <td>3</td>
+            <td>0</td>
+            <td>7</td>
+            <td>10</td>
+            <td>525</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>충북</td>
+            <td>262</td>
+            <td>5</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>267</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>충남</td>
+            <td>162</td>
+            <td>12</td>
+            <td>0</td>
+            <td>6</td>
+            <td>2</td>
+            <td>168</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>전북</td>
+            <td>264</td>
+            <td>8</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>272</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>전남</td>
+            <td>163</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>3</td>
+            <td>165</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>경북</td>
+            <td>208</td>
+            <td>17</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>225</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>경남</td>
+            <td>247</td>
+            <td>6</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>252</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>제주</td>
+            <td>144</td>
+            <td>5</td>
+            <td>0</td>
+            <td>11</td>
+            <td>0</td>
+            <td>138</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>계</td>
+            <td>3,773</td>
+            <td>161</td>
+            <td>0</td>
+            <td>33</td>
+            <td>37</td>
+            <td>3,901</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+  
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box chart">
+      <h3>돌봄서비스 선정 아동수</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie1"  width="400" height="100"></canvas>
+      </div>
+    </div>
+    <div class="con-box chart">
+      <h3>돌봄서비스 대기 아동수</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie2"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>실이용 아동수</h3>
+    <div class="table-wrap color-table multi-table">
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="3">기관</th>
+            <th rowspan="3">전월<br />ⓗ</th>
+            <th colspan="3">실이용 아동수</th>
+            <th colspan="2">배정량 대비 이용률</th>
+          </tr>
+          <tr>
+            <th colspan="2">신규 이용</th>
+            <th rowspan="2">실이용<br />ⓗ+ⓘ+ⓙ</th>
+            <th rowspan="2">배정량<br />(명)</th>
+            <th rowspan="2">이용률<br />(%)</th>
+          </tr>
+          <tr>
+            <th>신규<br />ⓘ</th>
+            <th>긴급 돌봄<br />ⓙ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>서울</td>
+            <td>286</td>
+            <td>10</td>
+            <td>0</td>
+            <td>296</td>
+            <td>721</td>
+            <td>41</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>286</td>
+            <td>10</td>
+            <td>0</td>
+            <td>296</td>
+            <td>721</td>
+            <td>41</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>286</td>
+            <td>10</td>
+            <td>0</td>
+            <td>296</td>
+            <td>721</td>
+            <td>41</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>286</td>
+            <td>10</td>
+            <td>0</td>
+            <td>296</td>
+            <td>721</td>
+            <td>41</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>286</td>
+            <td>10</td>
+            <td>0</td>
+            <td>296</td>
+            <td>721</td>
+            <td>41</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box chart">
+      <h3>돌봄서비스 실이용 아동수</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie3"></canvas>
+      </div>  
+    </div>
+    <div class="con-box chart">
+      <h3>돌봄서비스 배정량 대비 아동수</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie4"></canvas>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>장애유형 별</h3>
+    <div class="table-wrap color-table">
+      <table>
+        <thead>
+          <tr>
+            <th>기관</th>
+            <th>자폐성</th>
+            <th>지적</th>
+            <th>뇌병변</th>
+            <th>지체</th>
+            <th>시각</th>
+            <th>청각</th>
+            <th>정신</th>
+            <th>신장</th>
+            <th>심장</th>
+            <th>호흡기</th>
+            <th>간</th>
+            <th>안면</th>
+            <th>장루</th>
+            <th>간질</th>
+            <th>언어</th>
+            <th>합계</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>서울</td>
+            <td>0</td>
+            <td>1</td>
+            <td>6</td>
+            <td>0</td>
+            <td>0</td>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>부산</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>계</td>
+            <td>24</td>
+            <td>48</td>
+            <td>33</td>
+            <td>1</td>
+            <td>0</td>
+            <td>6</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>114</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>연령 별</h3>
+    <div class="table-wrap color-table">
+      <table>
+        <thead>
+          <tr>
+            <th>기관</th>
+            <th>만3세 미만</th>
+            <th>만3세이상 ~ 만6세 미만</th>
+            <th>만6세이상 ~ 만 12세 미만</th>
+            <th>만12세이상 ~ 만 18세 미만</th>
+            <th>합계</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>414</td>
+            <td>1,216</td>
+            <td>947</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box con-box4">
+      <h3>가족형태</h3>
+      <div class="table-wrap color-table">
+        <table>
+          <thead>
+            <tr>
+              <th>기관</th>
+              <th>한부모</th>
+              <th>조순</th>
+              <th>맞벌이</th>
+              <th>다자녀</th>
+              <th>다문화</th>
+              <th>일반</th>
+              <th>합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>서울</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3</td>
+              <td>2</td>
+              <td>0</td>
+              <td>5</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>2월</td>
+              <td>328</td>
+              <td>20</td>
+              <td>561</td>
+              <td>375</td>
+              <td>97</td>
+              <td>1,537</td>
+              <td>2,938</td>
+            </tr>
+            <tr>
+              <td>3월</td>
+              <td>328</td>
+              <td>20</td>
+              <td>561</td>
+              <td>375</td>
+              <td>97</td>
+              <td>1,537</td>
+              <td>2,938</td>
+            </tr>
+            <tr>
+              <td>계</td>
+              <td>328</td>
+              <td>20</td>
+              <td>561</td>
+              <td>375</td>
+              <td>97</td>
+              <td>1,537</td>
+              <td>2,938</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="con-box con-box4">
+      <h3>양육자 장애여부</h3>
+      <div class="table-wrap color-table">
+        <table>
+          <thead>
+            <tr>
+              <th>양육자 장애 有</th>
+              <th>양육자 장애 無</th>
+              <th>합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>125</td>
+              <td>2,813</td>
+              <td>2,938</td>
+            </tr>
+            <tr>
+              <td>125</td>
+              <td>2,813</td>
+              <td>2,938</td>
+            </tr>
+            <tr>
+              <td>125</td>
+              <td>2,813</td>
+              <td>2,938</td>
+            </tr>
+            <tr>
+              <td>125</td>
+              <td>2,813</td>
+              <td>2,938</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box con-box4">
+      <h3>가정 소득 별</h3>
+      <div class="table-wrap color-table">
+        <table>
+          <thead>
+            <tr>
+              <th>기관</th>
+              <th>기초생활수급</th>
+              <th>차상위이상<br/>(전국가구평균소득 120%이하)</th>
+              <th>합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>서울</td>
+              <td>0</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>0</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>0</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>0</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>계</td>
+              <td>0</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>  
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="con-box con-box4">
+      <h3>성별</h3>
+      <div class="table-wrap color-table">
+        <table>
+          <thead class="correction">
+            <tr>
+              <th>남</th>
+              <th>여</th>
+              <th>합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>7</td>
+              <td>3</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>3</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>3</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>3</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>3</td>
+              <td>10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>시스템 연계 건수 및 연계 아동수</h3>
+    <div class="table-wrap color-table">
+      <table>
+        <thead>
+          <tr>
+            <th>기관</th>
+            <th>연계 건수</th>
+            <th>연계 아동수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>서울</td>
+            <td>3,467</td>
+            <td>237</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>3,467</td>
+            <td>237</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>3,467</td>
+            <td>237</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>3,467</td>
+            <td>237</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>3,467</td>
+            <td>237</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>3,467</td>
+            <td>237</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>3,467</td>
+            <td>237</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>3,467</td>
+            <td>237</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>3,467</td>
+            <td>237</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>3,467</td>
+            <td>237</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>3,467</td>
+            <td>237</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>3,467</td>
+            <td>237</td>
+          </tr> 
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box chart">
+      <h3>서비스 연계 건수</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie5"></canvas>
+      </div> 
+    </div>
+    <div class="con-box chart">
+      <h3>연계 아동수</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie6"></canvas>
+      </div>  
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>이용 장소별(단일체크)</h3>
+    <div class="table-wrap color-table">
+      <table>
+        <thead>
+          <tr>
+            <th>기관</th>
+            <th>이용자 가정 내</th>
+            <th>돌보미 가정 내</th>
+            <th>교육기관, 치료시설 내</th>
+            <th>이동, 외출장소</th>
+            <th>기타</th>
+            <th>합계</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>서울</td>
+            <td>2,063</td>
+            <td>39</td>
+            <td>797</td>
+            <td>598</td>
+            <td>0</td>
+            <td>3,467</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>2,063</td>
+            <td>39</td>
+            <td>797</td>
+            <td>598</td>
+            <td>0</td>
+            <td>3,467</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>2,063</td>
+            <td>39</td>
+            <td>797</td>
+            <td>598</td>
+            <td>0</td>
+            <td>3,467</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>2,063</td>
+            <td>39</td>
+            <td>797</td>
+            <td>598</td>
+            <td>0</td>
+            <td>3,467</td>
+          </tr> 
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>이용 시간별(단일체크)</h3>
+    <div class="table-wrap color-table">
+      <table>
+        <thead>
+          <tr>
+            <th>기관</th>
+            <th>3시간 미만</th>
+            <th>3~4시간</th>
+            <th>5~6시간</th>
+            <th>7~8시간</th>
+            <th>8시간 초과</th>
+            <th>합계</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>서울</td>
+            <td>527</td>
+            <td>1,487</td>
+            <td>854</td>
+            <td>599</td>
+            <td>0</td>
+            <td>3,467</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>527</td>
+            <td>1,487</td>
+            <td>854</td>
+            <td>599</td>
+            <td>0</td>
+            <td>3,467</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>527</td>
+            <td>1,487</td>
+            <td>854</td>
+            <td>599</td>
+            <td>0</td>
+            <td>3,467</td>
+          </tr> 
+          <tr>
+            <td>서울</td>
+            <td>527</td>
+            <td>1,487</td>
+            <td>854</td>
+            <td>599</td>
+            <td>0</td>
+            <td>3,467</td>
+          </tr> 
+          <tr>
+            <td>계</td>
+            <td>10,729</td>
+            <td>22,209</td>
+            <td>9,614</td>
+            <td>5,106</td>
+            <td>756</td>
+            <td>48,414</td>
+          </tr> 
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box con-box4">
+      <h3>이용 시간대별(중복체크)</h3>
+      <div class="table-wrap color-table">
+        <table>
+          <thead>
+            <tr>
+              <th>기관</th>
+              <th>오전<br/>(06:00~12:00)</th>
+              <th>오후<br/>(12:00~18:00)</th>
+              <th>오전<br/>(18:00~22:00)</th>
+              <th>오전<br/>(22:00~06:00)</th>
+              <th>합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>서울</td>
+              <td>1,814</td>
+              <td>3,769</td>
+              <td>1,530</td>
+              <td>0</td>
+              <td>7,113</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>1,814</td>
+              <td>3,769</td>
+              <td>1,530</td>
+              <td>0</td>
+              <td>7,113</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>1,814</td>
+              <td>3,769</td>
+              <td>1,530</td>
+              <td>0</td>
+              <td>7,113</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>1,814</td>
+              <td>3,769</td>
+              <td>1,530</td>
+              <td>0</td>
+              <td>7,113</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="con-box con-box4">
+      <h3>이용 요일별(단일체크)</h3>
+      <div class="table-wrap color-table long">
+        <table>
+          <thead>
+            <tr>
+              <th>평일</th>
+              <th>토요일</th>
+              <th>일요일<br/>공휴일</th>
+              <th>합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3,317</td>
+              <td>57</td>
+              <td>93</td>
+              <td>3,467</td>
+            </tr>
+            <tr>
+              <td>3,317</td>
+              <td>57</td>
+              <td>93</td>
+              <td>3,467</td>
+            </tr>
+            <tr>
+              <td>3,317</td>
+              <td>57</td>
+              <td>93</td>
+              <td>3,467</td>
+            </tr>
+            <tr>
+              <td>3,317</td>
+              <td>57</td>
+              <td>93</td>
+              <td>3,467</td>
+            </tr>
+            <tr>
+              <td>3,317</td>
+              <td>57</td>
+              <td>93</td>
+              <td>3,467</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>양육자의 이용 사유별</h3>
+    <div class="table-wrap color-table">
+      <table>
+        <thead>
+          <tr>
+            <th>기관</th>
+            <th>직장근무</th>
+            <th>자기계발<br />(취업준비, 교육참여 등)</th>
+            <th>병원치료</th>
+            <th>여가활동<br />(휴식 포함)</th>
+            <th>집안행사</th>
+            <th>타 가족구성원 부양</th>
+            <th>합계</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>서울</td>
+            <td>913</td>
+            <td>46</td>
+            <td>174</td>
+            <td>117</td>
+            <td>896</td>
+            <td>1,321</td>
+            <td>3,467</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>913</td>
+            <td>46</td>
+            <td>174</td>
+            <td>117</td>
+            <td>896</td>
+            <td>1,321</td>
+            <td>3,467</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>913</td>
+            <td>46</td>
+            <td>174</td>
+            <td>117</td>
+            <td>896</td>
+            <td>1,321</td>
+            <td>3,467</td>
+          </tr>
+          <tr>
+            <td>서울</td>
+            <td>913</td>
+            <td>46</td>
+            <td>174</td>
+            <td>117</td>
+            <td>896</td>
+            <td>1,321</td>
+            <td>3,467</td>
+          </tr>
+          <tr>
+            <td>계</td>
+            <td>16,012</td>
+            <td>1,558</td>
+            <td>5,295</td>
+            <td>9,263</td>
+            <td>1,262</td>
+            <td>15,024</td>
+            <td>48,414</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box con-box4">
+      <h3>서비스 형태별(단일체크)</h3>
+      <div class="table-wrap color-table">
+        <table>
+          <thead>
+            <tr>
+              <th>기관</th>
+              <th>돌봄전담</th>
+              <th>돌봄보조</th>
+              <th>합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>서울</td>
+              <td>3,192</td>
+              <td>275</td>
+              <td>3,467</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>3,192</td>
+              <td>275</td>
+              <td>3,467</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>3,192</td>
+              <td>275</td>
+              <td>3,467</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>3,192</td>
+              <td>275</td>
+              <td>3,467</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="con-box con-box4">
+      <h3>서비스 내용별(중복체크)</h3>
+      <div class="table-wrap color-table">
+        <table>
+          <thead>
+            <tr>
+              <th>일상생활</th>
+              <th>외출, 산책</th>
+              <th>이동, 동반</th>
+              <th>신변처리</th>
+              <th>학습, 놀이</th>
+              <th>합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3,221</td>
+              <td>214</td>
+              <td>736</td>
+              <td>2,026</td>
+              <td>1,621</td>
+              <td>7,818</td>
+            </tr>
+            <tr>
+              <td>3,221</td>
+              <td>214</td>
+              <td>736</td>
+              <td>2,026</td>
+              <td>1,621</td>
+              <td>7,818</td>
+            </tr>
+            <tr>
+              <td>3,221</td>
+              <td>214</td>
+              <td>736</td>
+              <td>2,026</td>
+              <td>1,621</td>
+              <td>7,818</td>
+            </tr>
+            <tr>
+              <td>3,221</td>
+              <td>214</td>
+              <td>736</td>
+              <td>2,026</td>
+              <td>1,621</td>
+              <td>7,818</td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box con-box4">
+      <h3>서비스 월시간(120) 초과 이용 아동수</h3>
+      <div class="table-wrap color-table">
+        <table>
+          <thead class="correction2">
+            <tr>
+              <th>기관</th>
+              <th>월 120시간 초과 이용 아동수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>서울</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>계</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="con-box con-box4 ">
+      <h3>서비스 연시간(840) 초과 이용 아동수</h3>
+      <div class="table-wrap color-table  multi-table">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">연 840시간 이내(신규)</th>
+              <th rowspan="2">연 840시간 이용 완료(신규)</th>
+              <th rowspan="2">연 840시간 초과 이용(신규)</th>
+            </tr>
+            <tr>
+              <th>기준 중위소득 120% 이하</th>
+              <th>기준 중위소득 120% 이하</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>232</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>232</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>232</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>232</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>232</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>   
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box chart">
+      <h3>돌봄서비스 월시간(120) 초과 이용 아동수</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie7"></canvas>
+      </div>  
+    </div>
+    <div class="con-box chart">
+      <h3>돌봄서비스 연시간(840) 이용 아동수</h3>
+      <div class="chart-table">
+        <canvas id="chart-pie8"></canvas>
+      </div>   
+    </div>
+  </div>
+</div>
+<script>
+  const sa0808_1 = document.getElementById('chart-pie1');
+  const sa0808_2 = document.getElementById('chart-pie2');
+  const sa0808_3 = document.getElementById('chart-pie3');
+  const sa0808_4 = document.getElementById('chart-pie4');
+  const sa0808_5 = document.getElementById('chart-pie5');
+  const sa0808_6 = document.getElementById('chart-pie6');
+  const sa0808_7 = document.getElementById('chart-pie7');
+  const sa0808_8 = document.getElementById('chart-pie8');
+
+  new Chart(sa0808_1, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_2, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_3, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_4, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_5, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_6, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_7, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_8, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+</script>
+</body>
+</html>

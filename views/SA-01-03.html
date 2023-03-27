@@ -15,16 +15,13 @@
   <script src="../lib/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
   <script src="../js/common.js"></script>
 </head>
-<body class="b-white">
+<body class="b-white no-commons">
 <header>
   <div class="wrap">
-    <ul class="menu">
-      <li class="on"><a href="#">Dash Board</a></li>
-      <li><a href="#">돌봄 서비스</a></li>
-      <li><a href="#">교육의수</a></li>
-      <li><a href="#">돌보미 급여조회</a></li>
-      <li><a href="#">게시판</a></li>
-      <li><a href="#">관리자페이지</a></li>
+    <ul class="menu user">
+      <li><a href="#">돌봄 서비스 소개</a></li>
+      <li><a href="#">휴식 지원프로그램 소개</a></li>
+      <li  class="on"><a href="#">오시는 길</a></li>
     </ul>
     <div class="member-box">
       <a href="#" class="btn line">로그인</a>
@@ -34,11 +31,14 @@
 
 <div class="center-select-wrap">
   <div class="wrap">
-    <select name="" id="">
-      <option value="">기관 선택</option>
-      <option value=""></option>
-    </select>
-</div>
+    <div class="select-box">
+      <select name="" id="">
+        <option value="">기관 선택</option>
+        <option value=""></option>
+      </select>
+      <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+    </div>
+  </div>
 </div>
 
 <div class="wrap">
@@ -53,11 +53,15 @@
         <li><a href="#" class="pop-btn pop22">저작권 정책</a></li>
         <li><a href="#">오시는 길</a></li>
       </ul>
-      <div>
-        <select name="" id="">
-          <option value="">관련 사이트</option>
-          <option value=""></option>
-        </select>
+      <div class="input main">
+        <div class="select-box" class="info-input">
+          <select name="" id="">
+            <option value="">관련 사이트</option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+        </div>
         <a href="#" class="btn line">이동</a>
       </div>
     </div>
