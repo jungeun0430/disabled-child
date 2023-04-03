@@ -14,7 +14,7 @@ $(function(){
             <a href="#" title="hamburger-button" class="hamburger-button only-tablet on"><span class="bar">메뉴 열고/닫기</span></a>
             <h1>
                 <a href="#">
-                    <img src="../img/logo.svg" alt="장애아가족 양육지원사업"/>
+                    <img src="/img/logo-noimg.svg" alt="중앙장애아동 발달장애인지원센터 장애아가족 양육지원사업"/ >
                 </a>
             </h1>
             <div class="menu-wrap j-between a-center">
@@ -116,6 +116,11 @@ $(function(){
                 <div class="select">
                 <select name="" id="">
                     <option value="0">관련사이트</option>
+                    <option value="1">관련사이트 글자가 길 경우 고정된 값으로 셀렉트박스 메뉴가 표현됩니다.</option>
+                    <option value="2">관련사이트</option>
+                    <option value="3">관련사이트</option>
+                    <option value="4">관련사이트</option>
+                    <option value="5">관련사이트</option>
                 </select>
                 </div>
             </div>
