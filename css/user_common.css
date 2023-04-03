@@ -437,8 +437,8 @@ a.hamburger-button.close > span{opacity:0;}
     .slide-list .text-content-box .text-box{display:none; padding:0 24px;font-size:11px;}
     .slide-list > li > div.text-content-box{padding-left:0;z-index:10;padding-left:24px;}
     .slide-list > li .image-box{display:flex;justify-content:center;align-items:center;margin-top:20px;}
-    .slide-list > li .image-box img{width:97%;}
-    .slide-list > li.childSupport .image-box{height:461px;}
+    .slide-list > li .image-box img{width:97%;height:311px;}
+    /*.slide-list > li.childSupport .image-box{height:461px;}*/
     .slide-box2{width: 100%;}
 }
 
