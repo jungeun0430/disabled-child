@@ -14,7 +14,7 @@ $(function(){
             <a href="#" title="hamburger-button" class="hamburger-button only-tablet on"><span class="bar">메뉴 열고/닫기</span></a>
             <h1>
                 <a href="#">
-                    <img src="/img/logo-noimg.svg" alt="중앙장애아동 발달장애인지원센터 장애아가족 양육지원사업"/ >
+                    <img src="../img/logo-noimg.svg" alt="중앙장애아동 발달장애인지원센터 장애아가족 양육지원사업"/ >
                 </a>
             </h1>
             <div class="menu-wrap j-between a-center">
