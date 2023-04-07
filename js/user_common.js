@@ -14,7 +14,7 @@ $(function(){
             <a href="#" title="hamburger-button" class="hamburger-button only-tablet on"><span class="bar">메뉴 열고/닫기</span></a>
             <h1>
                 <a href="#">
-                    <img src="../img/logo-noimg.svg" alt="중앙장애아동 발달장애인지원센터 장애아가족 양육지원사업"/ >
+                    <img src="../img/logo-img.svg" alt="중앙장애아동 발달장애인지원센터 장애아가족 양육지원사업"/ >
                 </a>
             </h1>
             <div class="menu-wrap j-between a-center">
@@ -97,7 +97,7 @@ $(function(){
     // footer 자동으로 넣기
     $('body').append(`
         <footer id="footer">
-        <div class="content-box j-between">
+        <div class="content-box">
             <div class="btn-wrap a-center">
                 <button type="button" class="btn foot">개인정보처리방침</button>
                 <button type="button" class="btn foot">저작권정책</button>
@@ -105,10 +105,10 @@ $(function(){
             <div class="footer-info-box">
                 <ul class="footer-info-list">
                     <li>[07236] 서울시 영등포구 의사당대로 22 이룸센터 7층 중앙장애아동, 발달장애인지원센터</li>
-                    <li>대표전화   02-3433-0743</li>
-                    <li>발달재활서비스 제공인력 자격관리   1544-6065</li>
-                    <li>팩스   02-3433-0739</li>
-                    <li>발달장애인 권리구제 상담   1522-2882</li>
+                    <li>대표전화 02-3433-0743</li>
+                    <li>발달재활서비스 제공인력 자격관리 1544-6065</li>
+                    <li>팩스 02-3433-0739</li>
+                    <li>발달장애인 권리구제 상담 1522-2882</li>
                 </ul>
                 <p class="copyright">COPYRIGHTS⒞ 2017 NATIONAL CENTER FOR DISABLED CHILDREN AND DEVELOPMENTAL DISABILITIES. ALL RIGHTS RESERVED</p>
             </div>

@@ -9,6 +9,7 @@ $(function(){
           "        </li>\n" +
           "        <li><a href=#><img src='../img/group-icon.svg' alt=''><img src='../img/group-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>돌봄 서비스</span></a>\n" +
           "            <ul class='second-menu'>\n" +
+        "                <li class='menu-title'>돌봄 서비스</li>\n" +
           "                <li><a href='#'>배정조회</a></li>\n" +
           "                <li><a href='#'>서비스 관리<img src='../img/down-arrow.svg'></a>\n" +
           "                    <ul class='third-menu'>\n" +
