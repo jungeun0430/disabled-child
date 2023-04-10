@@ -9,7 +9,7 @@ $(function(){
           "        </li>\n" +
           "        <li><a href=#><img src='../img/group-icon.svg' alt=''><img src='../img/group-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>돌봄 서비스</span></a>\n" +
           "            <ul class='second-menu'>\n" +
-        "                <li class='menu-title'>돌봄 서비스</li>\n" +
+          "                <li class='menu-title'>돌봄 서비스</li>\n" +
           "                <li><a href='#'>배정조회</a></li>\n" +
           "                <li><a href='#'>서비스 관리<img src='../img/down-arrow.svg'></a>\n" +
           "                    <ul class='third-menu'>\n" +
@@ -19,18 +19,21 @@ $(function(){
           "                </li>\n" +
           "            </ul>\n" +
           "        </li>\n" +
-          "        <li><a href='#'><img src='../img/assign-icon.svg' alt=''><img src='../img/assign-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>교육의수</span></a>\n" +
+          "        <li><a href='#'><img src='../img/assign-icon.svg' alt=''><img src='../img/assign-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>교육이수</span></a>\n" +
           "            <ul class='second-menu'>\n" +
+          "                <li class='menu-title'>교육이수</li>\n" +
           "                <li><a href='#'>교육이수현황 조회</a></li>\n" +
           "            </ul>\n" +
           "        </li>\n" +
           "        <li><a href='#'><img src='../img/find-icon.svg' alt=''><img src='../img/find-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>돌보미 급여조회</span></a>\n" +
           "            <ul class='second-menu'>\n" +
+          "                <li class='menu-title'>돌보미 급여조회</li>\n" +
           "                <li><a href='#'>급여 조회</a></li>\n" +
           "            </ul>\n" +
           "        </li>\n" +
           "        <li><a href='#'><img src='../img/note-icon.svg' alt=><img src='../img/note-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>게시판</span></a>\n" +
           "            <ul class='second-menu'>\n" +
+          "                <li class='menu-title'>게시판</li>\n" +
           "                <li><a href='#'>공지사항</a></li>\n" +
           "                <li><a href='#'>커뮤니티</a></li>\n" +
           "                <li><a href='#'>1:1문의</a></li>\n" +
@@ -38,6 +41,7 @@ $(function(){
           "        </li>\n" +
           "        <li><a href='#'><img src='../img/setting-icon.svg' alt=''><img src='../img/setting-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>관리자페이지</span></a>\n" +
           "            <ul class='second-menu'>\n" +
+          "                <li class='menu-title'>관리자 페이지</li>\n" +
           "                <li><a href='#'>서비스현황<img src='../img/down-arrow.svg'></a>\n" +
           "                    <ul class='third-menu'>\n" +
           "                        <li><a href='#'>돌보미 정보</a></li>\n" +
